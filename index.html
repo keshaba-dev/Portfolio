@@ -4,397 +4,442 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Krushna | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="background-orbs" aria-hidden="true"></div>
 
-<nav class="navbar">
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
+  <div class="page-shell">
+    <header class="hero" id="top">
+      <nav class="navbar">
+        <a class="brand" href="#top">Krushna</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="nav-cta">Work With Me</a>
+        </div>
+      </nav>
 
-  <a href="#hire" class="hire-btn-nav">Hire Me</a>
-</nav>
+      <div class="hero-grid fade-up">
+        <div class="hero-copy">
+          <p class="eyebrow">Java and Spring Boot learner</p>
+          <h1>Classic presentation, modern engineering ambition.</h1>
+          <p class="hero-summary">
+            I am Krushna Keshaba Sahoo, an aspiring software engineer building strong fundamentals in
+            Java, DSA, Spring Boot, and product-minded frontend development. I enjoy creating digital
+            work that feels clean, useful, and thoughtfully structured.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#resume" class="btn btn-secondary">Download Resume</a>
+          </div>
+          <div class="hero-highlights">
+            <div>
+              <span>Primary Track</span>
+              <strong>Java, Spring Boot, backend systems</strong>
+            </div>
+            <div>
+              <span>Supporting Skills</span>
+              <strong>React, Tailwind CSS, UI/UX, Git</strong>
+            </div>
+          </div>
+        </div>
 
-<section id="about" class="intro fade">
-  <div>
-    <h1>Hi, I'm <span>Krushna Keshaba Sahoo</span></h1>
-    <p class="tag">Aspiring Software Development Engineer</p>
-    <b>Welcome to my PORTFOLIO !</b>
-  </div>
-  <div class="profile-card"><img src="img.jpeg" alt=""></div>
-</section>
-
-<section class="about fade">
-  <h2>About Me</h2>
-  <p class="about-text">
-  I’m an aspiring <span>Software Development Engineer</span> with a strong foundation in 
-  <span>Java</span> and <span>Data Structures & Algorithms</span>.
-
-  <br><br>
-
-  Currently learning about building <span>scalable backend systems</span> while exploring 
-  <span>Cloud (AWS)</span> and <span>DevOps</span>.
-
-  <br><br>
-
-  💡 I enjoy solving real-world problems, writing efficient code, and continuously improving.
-
-  <br><br>
-
-  🚀 <strong>What I Do:</strong>
-  <ul>
-    <li>Building website for commercial Purpose</li>
-    <li>Develop responsive UIs using React & Tailwind</li>
-    <li>Design clean UI/UX using Figma</li>
-  </ul>
-
-  🤝 Open to collaboration, freelance work, and building impactful projects.
-</p>
-</section>
-
-<section id="skills" class="fade">
-  <h2>SKILLS</h2>
-
-  <!-- COMPLETED -->
-  <h3>Completed</h3>
-  <div class="skills-row">
-
-    <div class="skill-card advanced">
-      <h3>Java</h3>
-      <ul>
-        <li>OOP, Collections Framework</li>
-        <li>Multithreading basics</li>
-        <li>Backend logic implementation</li>
-      </ul>
-      <span class="done">Completed</span>
-    </div>
-
-    <div class="skill-card advanced">
-      <h3>DSA</h3>
-      <ul>
-        <li>Arrays, Trees, Graphs</li>
-        <li>Problem solving approach</li>
-        <li>Optimized solutions</li>
-      </ul>
-      <span class="done">Completed</span>
-    </div>
-
-    <div class="skill-card advanced">
-      <h3>React + Tailwind</h3>
-      <ul>
-        <li>Component-based UI design</li>
-        <li>Responsive layouts</li>
-        <li>Modern UI development</li>
-      </ul>
-      <span class="done">Completed</span>
-    </div>
-
-    <div class="skill-card advanced">
-      <h3>Git & GitHub</h3>
-      <ul>
-        <li>Version control</li>
-        <li>Project management</li>
-        <li>Code collaboration</li>
-      </ul>
-      <span class="done">Completed</span>
-    </div>
-
-  </div>
-
-  <!-- ONGOING -->
-  <h3>Ongoing</h3>
-  <div class="skills-row">
-
-    <div class="skill-card advanced">
-      <h3>Spring Boot</h3>
-      <ul>
-        <li>REST API development</li>
-        <li>Backend architecture</li>
-        <li>Microservices basics</li>
-      </ul>
-      <span class="ongoing">Ongoing</span>
-    </div>
-
-    <div class="skill-card advanced">
-      <h3>MySQL</h3>
-      <ul>
-        <li>Database design</li>
-        <li>Query optimization</li>
-        <li>Relational modeling</li>
-      </ul>
-      <span class="ongoing">Ongoing</span>
-    </div>
-
-    <div class="skill-card advanced">
-      <h3>AWS</h3>
-      <ul>
-        <li>Cloud fundamentals</li>
-        <li>Deployment basics</li>
-        <li>Scalable infrastructure</li>
-      </ul>
-      <span class="ongoing">Ongoing</span>
-    </div>
-
-    <div class="skill-card advanced">
-      <h3>REST API</h3>
-      <ul>
-        <li>API design principles</li>
-        <li>Request/response handling</li>
-        <li>Authentication basics</li>
-      </ul>
-      <span class="ongoing">Ongoing</span>
-    </div>
-
-  </div>
-
-</section>
-
-<section id="projects" class="fade">
-  <h2>Projects</h2>
-
-  <!-- PORTFOLIO -->
-  <div class="project-row">
-    <div class="project-icon">
-      <i class="fas fa-laptop-code"></i>
-    </div>
-
-    <div class="project-content">
-      <h3>Portfolio Website</h3>
-      <p>Personal portfolio showcasing my skills and development journey.</p>
-
-      <div class="tools">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
+        <aside class="hero-portrait">
+          <div class="portrait-frame">
+            <img src="img.jpeg" alt="Portrait of Krushna Keshaba Sahoo">
+            <div class="portrait-badge">
+              <span>Focused on</span>
+              <strong>Thoughtful websites and scalable backend growth</strong>
+            </div>
+          </div>
+          <div class="portrait-note">
+            <p class="note-label">Introduction</p>
+            <p>I bring a combination of design awareness, frontend execution, and growing backend depth with Java and Spring Boot.</p>
+          </div>
+        </aside>
       </div>
+    </header>
 
-      <span class="status done">Completed</span>
-    </div>
+    <main>
+      <section class="section stats-strip fade-up">
+        <div class="stat-card card">
+          <span class="stat-number">2024</span>
+          <p>Started BS in Computer Science and committed to a software engineering path.</p>
+        </div>
+        <div class="stat-card card">
+          <span class="stat-number">4+</span>
+          <p>Core areas actively studied: Java, DSA, Spring Boot, and frontend UI development.</p>
+        </div>
+        <div class="stat-card card">
+          <span class="stat-number">2</span>
+          <p>Ongoing product ideas currently shaping my practical development journey.</p>
+        </div>
+      </section>
+
+      <section id="about" class="section section-split fade-up">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>A learner building toward professional software engineering with consistency and intent.</h2>
+        </div>
+        <div class="section-body card">
+          <p>
+            I am an aspiring <span>Software Development Engineer</span> with a strong foundation in
+            <span>Java</span> and <span>Data Structures &amp; Algorithms</span>.
+          </p>
+          <p>
+            My current focus is <span>Spring Boot</span> and learning how to build <span>scalable backend systems</span>,
+            while also exploring <span>MySQL</span>, <span>AWS</span>, and practical API design.
+          </p>
+          <p>
+            Alongside development, I enjoy shaping clean interfaces and improving products through both
+            engineering logic and design thinking.
+          </p>
+          <ul class="feature-list">
+            <li>Build responsive websites for personal and commercial use</li>
+            <li>Create modern interfaces with React and Tailwind CSS</li>
+            <li>Design clean UI/UX concepts in Figma with usability in mind</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section focus-section fade-up">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Tech Focus</p>
+          <h2>The stack and direction I am developing with the most seriousness.</h2>
+        </div>
+
+        <div class="focus-grid">
+          <article class="card focus-card">
+            <h3>Backend Growth</h3>
+            <p>Building stronger depth in Java and Spring Boot while understanding scalable service structure, APIs, and data flow.</p>
+          </article>
+          <article class="card focus-card">
+            <h3>Frontend Delivery</h3>
+            <p>Creating responsive interfaces using React and Tailwind CSS with an eye for balance, usability, and modern polish.</p>
+          </article>
+          <article class="card focus-card">
+            <h3>Design Thinking</h3>
+            <p>Using Figma and layout discipline to make products feel more intuitive, readable, and trustworthy.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section fade-up">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>What I have built confidence in, and what I am actively developing next.</h2>
+        </div>
+
+        <div class="skill-groups">
+          <div class="skill-group card">
+            <div class="group-header">
+              <h3>Completed</h3>
+              <span class="pill success">Strong base</span>
+            </div>
+            <div class="skill-grid">
+              <article class="skill-card">
+                <h4>Java</h4>
+                <p>OOP, collections, multithreading basics, and backend logic implementation.</p>
+              </article>
+              <article class="skill-card">
+                <h4>DSA</h4>
+                <p>Arrays, trees, graphs, and an optimization-first problem solving mindset.</p>
+              </article>
+              <article class="skill-card">
+                <h4>React + Tailwind</h4>
+                <p>Component-based UI development with responsive layouts and clean styling systems.</p>
+              </article>
+              <article class="skill-card">
+                <h4>Git &amp; GitHub</h4>
+                <p>Version control, project collaboration, and maintaining consistent development flow.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="skill-group card">
+            <div class="group-header">
+              <h3>Currently Learning</h3>
+              <span class="pill warning">In progress</span>
+            </div>
+            <div class="skill-grid">
+              <article class="skill-card">
+                <h4>Spring Boot</h4>
+                <p>REST APIs, backend architecture, and service-layer thinking for scalable systems.</p>
+              </article>
+              <article class="skill-card">
+                <h4>MySQL</h4>
+                <p>Relational modeling, schema design, and writing practical, efficient queries.</p>
+              </article>
+              <article class="skill-card">
+                <h4>AWS</h4>
+                <p>Cloud fundamentals, deployment basics, and infrastructure awareness.</p>
+              </article>
+              <article class="skill-card">
+                <h4>REST API Design</h4>
+                <p>Request-response design, data exchange structure, and authentication basics.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section fade-up">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work that reflects both my development journey and product thinking.</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card card">
+            <div class="project-meta">
+              <i class="fas fa-laptop-code"></i>
+              <span class="pill success">Completed</span>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>
+              A personal website designed to present my work, technical direction, and design sensibility
+              in a clear and approachable format.
+            </p>
+            <div class="tag-row">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div class="project-meta">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="pill warning">Ongoing</span>
+            </div>
+            <h3>E-Commerce Platform</h3>
+            <p>
+              A scalable product-focused system aimed at improving shopping flow, performance, and overall
+              architecture across frontend and backend layers.
+            </p>
+            <div class="tag-row">
+              <span>React</span>
+              <span>Tailwind CSS</span>
+              <span>Spring Boot</span>
+              <span>MySQL</span>
+              <span>AWS</span>
+            </div>
+            <p class="project-note">GitHub and live deployment links can be added once the build is published.</p>
+          </article>
+
+          <article class="project-card card">
+            <div class="project-meta">
+              <i class="fas fa-utensils"></i>
+              <span class="pill warning">Ongoing</span>
+            </div>
+            <h3>Restaurant Booking System</h3>
+            <p>
+              A booking platform concept focused on smoother reservations, stronger discovery, and a better
+              connection between customers and hospitality businesses.
+            </p>
+            <div class="tag-row">
+              <span>React</span>
+              <span>Tailwind CSS</span>
+              <span>Spring Boot</span>
+              <span>MySQL</span>
+              <span>AWS</span>
+            </div>
+            <p class="project-note">Live links will fit naturally here when the system is ready to share.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" class="section resume-section fade-up">
+        <div class="resume-card card">
+          <div class="resume-copy">
+            <p class="eyebrow">Resume Download</p>
+            <h2>A compact resume snapshot is ready to download.</h2>
+            <p>
+              Since you are still building formal experience, this resume focuses on education, technical
+              strengths, current learning, projects, and the kind of work you are preparing for.
+            </p>
+            <div class="resume-actions">
+              <a href="Krushna_Keshaba_Sahoo_Resume.txt" download class="btn btn-primary">Download Resume</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+          </div>
+          <div class="resume-points">
+            <div>
+              <span>Education</span>
+              <strong>BS in Computer Science, Utkal University</strong>
+            </div>
+            <div>
+              <span>Core Skills</span>
+              <strong>Java, DSA, React, Tailwind, Git</strong>
+            </div>
+            <div>
+              <span>Learning Track</span>
+              <strong>Spring Boot, MySQL, AWS, REST APIs</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process-section fade-up">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Development Approach</p>
+          <h2>How I prefer to move from idea to a cleaner, more usable result.</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="card process-card">
+            <span class="process-step">01</span>
+            <h3>Understand</h3>
+            <p>I start by understanding the problem clearly so the final product solves something useful, not just something visual.</p>
+          </article>
+          <article class="card process-card">
+            <span class="process-step">02</span>
+            <h3>Design</h3>
+            <p>I organize layout, interaction flow, and visual clarity before building so the experience feels intentional.</p>
+          </article>
+          <article class="card process-card">
+            <span class="process-step">03</span>
+            <h3>Build</h3>
+            <p>I implement with responsiveness, readability, and maintainable structure in mind while improving as I learn.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section showcase fade-up">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Selected Design Work</p>
+          <h2>UI/UX explorations shaped around clarity, navigation, and user comfort.</h2>
+        </div>
+
+        <div class="showcase-list">
+          <article class="showcase-card card">
+            <div class="showcase-image">
+              <img src="ui1.png" alt="E-commerce UI design preview">
+            </div>
+            <div class="showcase-copy">
+              <h3>E-Commerce Website Design</h3>
+              <p>
+                A modern commerce interface focused on product visibility, intuitive browsing, and stronger
+                call-to-action placement.
+              </p>
+              <ul class="feature-list compact-list">
+                <li>Structured product grid for faster scanning</li>
+                <li>Clear category flow and visual hierarchy</li>
+                <li>Mobile-friendly interactions and CTA placement</li>
+              </ul>
+              <p class="tool-label">Designed in Figma</p>
+            </div>
+          </article>
+
+          <article class="showcase-card card reverse-layout">
+            <div class="showcase-image">
+              <img src="ui2.png" alt="Education platform UI design preview">
+            </div>
+            <div class="showcase-copy">
+              <h3>Education Platform UI</h3>
+              <p>
+                A learning-focused interface designed to support course discovery, readability, and calm,
+                structured content consumption.
+              </p>
+              <ul class="feature-list compact-list">
+                <li>Search-led discovery with organized course cards</li>
+                <li>Readable hero and content zones for better focus</li>
+                <li>Simple interactions designed around user confidence</li>
+              </ul>
+              <p class="tool-label">Designed in Figma</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section credentials fade-up">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Credentials</p>
+          <h2>The tools, education, and service areas that support my work.</h2>
+        </div>
+
+        <div class="credentials-grid">
+          <article class="card credential-card">
+            <h3>Tools &amp; Technologies</h3>
+            <div class="tag-row">
+              <span>VS Code</span>
+              <span>GitHub</span>
+              <span>Git</span>
+              <span>AWS</span>
+              <span>Figma</span>
+            </div>
+          </article>
+
+          <article class="card credential-card">
+            <h3>Education</h3>
+            <p>BS in Computer Science</p>
+            <p>Utkal University</p>
+            <p>2024 to present</p>
+          </article>
+
+          <article class="card credential-card">
+            <h3>Available For</h3>
+            <p>Freelance websites, educational platforms, personal brands, and collaborative product work.</p>
+            <a href="mailto:kkeshaba07@gmail.com" class="text-link">Discuss a project</a>
+          </article>
+        </div>
+
+        <div class="wide-feature card">
+          <div class="wide-feature-copy">
+            <p class="eyebrow">Featured UI Snapshot</p>
+            <h3>Designing interfaces that feel professional, usable, and visually balanced.</h3>
+            <p>
+              Alongside development, I enjoy shaping clean front-end experiences that support user trust,
+              readability, and practical interaction flow.
+            </p>
+          </div>
+          <div class="wide-feature-media">
+            <img src="UImain.png" alt="Main UI design showcase">
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section fade-up">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let us build something useful, polished, and memorable.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <a href="https://github.com/your-username" target="_blank" rel="noreferrer" class="contact-card card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p>Add your GitHub username here when ready to share repositories.</p>
+          </a>
+
+          <a href="https://www.linkedin.com/in/krushna-keshaba-sahoo-04808830b/" target="_blank" rel="noreferrer" class="contact-card card">
+            <i class="fab fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <p>Visit my professional profile and connect with me there.</p>
+          </a>
+
+          <a href="mailto:kkeshaba07@gmail.com" class="contact-card card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>kkeshaba07@gmail.com</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Krushna Keshaba Sahoo</p>
+    </footer>
   </div>
 
-  <!-- E-COMMERCE -->
-  <div class="project-row">
-    <div class="project-icon">
-      <i class="fas fa-shopping-cart"></i>
-    </div>
-
-    <div class="project-content">
-      <h3>E-Commerce Platform</h3>
-      <p>
-        High-performance scalable system with improved response time and modern architecture.
-      </p>
-
-      <div class="tools">
-        <span>React JS</span>
-        <span>Tailwind CSS</span>
-        <span>Spring Boot</span>
-        <span>System Design (LLD)</span>
-        <span>MySQL</span>
-        <span>AWS</span>
-        <span>Netlify</span>
-      </div>
-
-      <span class="status ongoing">Ongoing • Under Execution</span>
-      <p class="future">[Future GitHub + Live Link]</p>
-    </div>
-  </div>
-
-  <!-- RESTAURANT -->
-  <div class="project-row">
-    <div class="project-icon">
-      <i class="fas fa-utensils"></i>
-    </div>
-
-    <div class="project-content">
-      <h3>Restaurant Booking System</h3>
-      <p>
-        Building a scalable platform connecting customers and hotels, solving booking inefficiencies.
-      </p>
-
-      <div class="tools">
-        <span>React JS</span>
-        <span>Tailwind CSS</span>
-        <span>Spring Boot</span>
-        <span>System Design (LLD)</span>
-        <span>MySQL</span>
-        <span>AWS</span>
-        <span>Netlify</span>
-      </div>
-
-      <span class="status ongoing">Ongoing • Under Execution</span>
-      <p class="future">[Future GitHub + Live Link]</p>
-    </div>
-  </div>
-
-</section>
-<!--TOOLS SECTION -->
-<section class="fade">
-  <h2>Tools & Technologies</h2>
-
-  <div class="tools-container">
-
-    <div class="tool-card">
-      <i class="fas fa-code"></i>
-      <p>VS Code</p>
-    </div>
-
-    <div class="tool-card">
-      <i class="fab fa-github"></i>
-      <p>GitHub</p>
-    </div>
-
-    <div class="tool-card">
-      <i class="fas fa-terminal"></i>
-      <p>Git</p>
-    </div>
-
-    <div class="tool-card">
-      <i class="fas fa-cloud"></i>
-      <p>AWS</p>
-    </div>
-
-  </div>
-</section>
-<!--EDucation section-->
-<section class="fade">
-  <h2>Education</h2>
-  <div class="card">
-    BS Computer Science - Utkal University <br>
-    2024-present
-  </div>
-</section>
-
-
-<section id="hire" class="hire">
-  <div class="hire-container">
-
-    <!-- LEFT TEXT -->
-    <div class="hire-text">
-      <h2>Hire me for Projects</h2>
-
-      <p>
-        Hire me if you want clean , professional and well-pollished website design
-        for your personal or business purpose.
-      </p>
-      <p>
-        I create modern, responsive websites using <strong>React JS</strong> and 
-        <strong>Tailwind CSS</strong>.
-      </p>
-
-      <p>
-        I also design clean and user-friendly interfaces using <strong>Figma</strong>,
-        focusing on user experience and visual clarity.
-      </p>
-
-      <p>
-        Available for freelance projects including commercial websites,
-        educational platforms, and personal brands.
-      </p>
-
-      <a href="mailto:kkeshaba07@gmail.com" class="hire-btn">
-        Work With Me
-      </a>
-    </div>
-
-    <!-- RIGHT IMAGE -->
-    <div class="hire-image">
-      <img src="UImain.png" alt="UI Design">
-    </div>
-
-  </div>
-</section>
-
-<section class="uiux fade">
-  <h2>UI/UX Design Projects</h2>
-
-  <!-- E-COMMERCE -->
-  <div class="uiux-case">
-    <div class="uiux-image">
-      <img src="ui1.png" alt="E-Commerce UI">
-    </div>
-
-    <div class="uiux-details">
-      <h3>E-Commerce Website Design</h3>
-
-      <p>
-        Designed a modern e-commerce interface focused on product visibility,
-        smooth navigation, and fast user interaction.
-      </p>
-
-      <ul>
-        <li>Clean product grid layout</li>
-        <li>Category-based filtering system</li>
-        <li>Optimized call-to-action buttons</li>
-        <li>Mobile-first responsive design</li>
-      </ul>
-
-      <p class="tool">Designed using Figma</p>
-    </div>
-  </div>
-
-  <!-- EDUCATION -->
-  <div class="uiux-case reverse">
-    <div class="uiux-image">
-      <img src="ui2.png" alt="Education UI">
-    </div>
-
-    <div class="uiux-details">
-      <h3>Education Platform UI</h3>
-
-      <p>
-        Built a user-friendly learning interface with structured content layout
-        and intuitive course navigation.
-      </p>
-
-      <ul>
-        <li>Search-based course discovery</li>
-        <li>Card-based course UI</li>
-        <li>Engaging hero section</li>
-        <li>Focus on readability & UX</li>
-      </ul>
-
-      <p class="tool">Designed using Figma</p>
-    </div>
-  </div>
-
-</section>
-
-<section id="contact" class="fade">
-  <h2>Connect With Me</h2>
-
-  <div class="contact-container">
-
-    <a href="https://github.com/your-username" target="_blank" class="contact-card">
-      <i class="fab fa-github"></i>
-      <h3>GitHub</h3>
-      <p>View my projects</p>
-    </a>
-
-    <a href="https://www.linkedin.com/in/krushna-keshaba-sahoo-04808830b/" target="_blank" class="contact-card">
-      <i class="fab fa-linkedin"></i>
-      <h3>LinkedIn</h3>
-      <p>Professional profile</p>
-    </a>
-
-    <a href="mailto:kkeshaba07@gmail.com" class="contact-card">
-      <i class="fas fa-envelope"></i>
-      <h3>Email</h3>
-      <p>Contact me directly</p>
-    </a>
-
-  </div>
-</section>
-
-<footer>
-  © 2026 Krushna Keshaba Sahoo
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

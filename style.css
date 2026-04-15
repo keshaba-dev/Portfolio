@@ -54,7 +54,7 @@ a {
 .orb {
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.55), rgba(215, 177, 144, 0.22) 55%, rgba(140, 90, 60, 0.06) 100%);
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.55), rgba(215, 177, 144, 0.30) 55%, rgba(140, 90, 60, 0.10) 100%);
   filter: blur(1px);
   animation: floatOrb linear infinite;
 }
@@ -609,7 +609,7 @@ a {
     opacity: 0;
   }
   15% {
-    opacity: 0.7;
+    opacity: 0.82;
   }
   50% {
     transform: translate3d(24px, -34vh, 0) scale(1.02);
@@ -729,3 +729,4 @@ a {
     padding: 20px;
   }
 }
+

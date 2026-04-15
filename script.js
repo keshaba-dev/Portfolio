@@ -1,18 +1,44 @@
-const bubbleCount = 30;
+const revealItems = document.querySelectorAll('.fade-up');
 
-for (let i = 0; i < bubbleCount; i++) {
-  const bubble = document.createElement("div");
-  bubble.classList.add("bubble");
+const revealObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    }
 
-  let size = Math.random() * 30 + 10;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, {
+  threshold: 0.18,
+  rootMargin: '0px 0px -30px 0px'
+});
 
-  bubble.style.width = size + "px";
-  bubble.style.height = size + "px";
+revealItems.forEach((item) => {
+  revealObserver.observe(item);
+});
 
-  bubble.style.left = Math.random() * 100 + "vw";
+const orbContainer = document.querySelector('.background-orbs');
 
-  bubble.style.animationDuration = (12 + Math.random() * 10) + "s";
-  bubble.style.animationDelay = Math.random() * 10 + "s";
+if (orbContainer) {
+  const orbCount = 9;
 
-  document.body.appendChild(bubble);
+  for (let i = 0; i < orbCount; i += 1) {
+    const orb = document.createElement('span');
+    const size = Math.floor(Math.random() * 140) + 70;
+    const duration = Math.random() * 16 + 18;
+    const delay = Math.random() * 12;
+    const left = Math.random() * 100;
+
+    orb.className = 'orb';
+    orb.style.width = `${size}px`;
+    orb.style.height = `${size}px`;
+    orb.style.left = `${left}%`;
+    orb.style.bottom = `${-size}px`;
+    orb.style.animationDuration = `${duration}s`;
+    orb.style.animationDelay = `${delay}s`;
+    orb.style.opacity = `${Math.random() * 0.35 + 0.18}`;
+
+    orbContainer.appendChild(orb);
+  }
 }

@@ -37,8 +37,9 @@ if (orbContainer) {
     orb.style.bottom = `${-size}px`;
     orb.style.animationDuration = `${duration}s`;
     orb.style.animationDelay = `${delay}s`;
-    orb.style.opacity = `${Math.random() * 0.35 + 0.18}`;
+    orb.style.opacity = `${Math.random() * 0.28 + 0.28}`;
 
     orbContainer.appendChild(orb);
   }
 }
+
